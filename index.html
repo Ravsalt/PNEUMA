@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PNEUMA PROTOCOL</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="game-container">
+        <div id="terminal-header">
+            <div class="header-title">PNEUMA.OS [v9.4.2] - SECURE TERMINAL</div>
+            <div id="stability-container">
+                <span>SYSTEM STABILITY:</span>
+                <div id="stability-bar-container">
+                    <div id="stability-bar"></div>
+                </div>
+                <span id="stability-value">100%</span>
+                <div style="text-align: center;" id="timer-display">00:00</div>
+
+            </div>
+            <div class="header-buttons">
+                <div class="header-button"></div>
+                <div class="header-button"></div>
+                <div class="header-button"></div>
+            </div>
+        </div>
+        <div id="terminal">
+            <!-- Start Screen -->
+            <div id="start-screen">
+                <h1 style="text-align: center;">PNEUMA PROTOCOL</h1>
+                <p style="color: #a0aec0; text-align: center;">A psychological evaluation awaits.</p>
+                <div style="display: flex; justify-content: center; margin-top: 1rem;">
+                    <button id="start-button" style="border: 1px solid #2d3748; background-color: #1a202c; color: #a0aec0; padding: 0.75rem 2rem; font-family: 'JetBrains Mono', monospace; cursor: pointer;">START</button>
+                </div>
+            </div>
+
+            <!-- Game Content (populated by JS) -->
+        </div>
+        <div id="input-line" class="hidden">
+            <span class="prompt">></span>
+            <input type="text" id="player-input" autocomplete="off" autofocus>
+        </div>
+    </div>
+    <script type="module" src="ui.js"></script>
+    <script type="module" src="game.js"></script>
+</body>
+</html>
